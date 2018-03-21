@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.meag.basketball00002816.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/equipo2"
+        android:layout_alignBottom="@+id/equipo2"
+        android:layout_alignEnd="@+id/equipo2"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/equipo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="Equipo 1" />
+
+        <TextView
+            android:id="@+id/contador1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equipo1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="0"
+            android:textSize="45sp" />
+
+
+        <Button
+            android:id="@+id/uno1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contador1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:onClick="ganar"
+            android:text="+1" />
+
+        <Button
+            android:id="@+id/dos1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/uno1"
+            android:layout_below="@+id/uno1"
+            android:layout_marginTop="38dp"
+            android:onClick="ganar"
+            android:text="+2" />
+
+        <Button
+            android:id="@+id/tres1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dos1"
+            android:layout_below="@+id/dos1"
+            android:layout_marginTop="38dp"
+            android:onClick="ganar"
+            android:text="+3" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#5b5b5b"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+
+        </RelativeLayout>
+    <RelativeLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/equipo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="Equipo 2" />
+
+        <TextView
+            android:id="@+id/contador2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equipo2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="0"
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/uno2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contador2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:onClick="ganar"
+            android:text="+1" />
+
+        <Button
+            android:id="@+id/dos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/uno2"
+            android:layout_below="@+id/uno2"
+            android:layout_marginTop="38dp"
+            android:onClick="ganar"
+            android:text="+2" />
+
+        <Button
+            android:id="@+id/tres2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dos2"
+            android:layout_below="@+id/dos2"
+            android:layout_marginTop="38dp"
+            android:onClick="ganar"
+            android:text="+3" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="reset"
+        android:text="Reset" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="Author: Miguel Ernesto Avilés Gamero" />
+
+</LinearLayout>
